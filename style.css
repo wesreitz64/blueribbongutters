@@ -161,8 +161,11 @@ body {
     text-decoration: none;
 }
 
-.logo__ribbon {
-    font-size: 1.6rem;
+.logo__img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .logo__blue {
@@ -175,11 +178,11 @@ body {
 
 .logo__sub {
     display: block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--gold);
 }
 
 .nav {
