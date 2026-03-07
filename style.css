@@ -465,14 +465,9 @@ body {
 
 .about__stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-}
-
-@media (max-width: 600px) {
-    .about__stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    max-width: 480px;
 }
 
 .stat-card {
