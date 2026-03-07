@@ -378,8 +378,8 @@ body {
 
 @media (max-width: 600px) {
     .hero {
-        min-height: 65vh;
-        padding: 2rem
+        min-height: auto;
+        padding: 1.5rem 0;
     }
 
     .hero__title {
@@ -387,7 +387,7 @@ body {
     }
 
     .hero__content {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
 
     .hero__actions {
