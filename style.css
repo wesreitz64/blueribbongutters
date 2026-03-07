@@ -863,9 +863,9 @@ body {
     }
 }
 
-/* ---- STICKY CTA BAR ---- */
+/* ---- MOBILE FLOATING CTA ---- */
 .mobile-cta {
-    display: flex;
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -876,15 +876,6 @@ body {
     z-index: 999;
     padding: 0.5rem 1rem 0.75rem;
     gap: 0.5rem;
-    max-width: 600px;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 16px 16px 0 0;
-}
-
-body {
-    padding-bottom: 80px;
 }
 
 .mobile-cta__btn {
@@ -918,4 +909,14 @@ body {
 
 .mobile-cta__btn i {
     font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .mobile-cta {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 80px;
+    }
 }
