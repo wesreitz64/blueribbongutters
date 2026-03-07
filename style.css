@@ -4,6 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 :root {
@@ -21,6 +29,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,6 +38,8 @@ body {
     background: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .container {
@@ -390,7 +401,7 @@ body {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1.5rem;
 }
 
