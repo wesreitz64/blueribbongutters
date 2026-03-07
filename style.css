@@ -51,7 +51,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 1.25rem;
+        padding: 0 .25rem;
     }
 }
 
@@ -379,7 +379,9 @@ body {
 @media (max-width: 600px) {
     .hero {
         min-height: auto;
-        padding: 1.5rem 0;
+        align-items: flex-start;
+        padding-top: 4.5rem;
+        padding-bottom: 2rem;
     }
 
     .hero__title {
@@ -387,7 +389,12 @@ body {
     }
 
     .hero__content {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
+    }
+
+    .hero__sub {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     .hero__actions {
