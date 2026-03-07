@@ -28,6 +28,7 @@ body {
     color: var(--dark);
     background: var(--white);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -468,6 +469,12 @@ body {
     gap: 1rem;
 }
 
+@media (max-width: 600px) {
+    .about__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .stat-card {
     background: var(--light);
     border-radius: var(--radius);
@@ -574,7 +581,7 @@ body {
 
 .testimonials__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1.5rem;
 }
 
