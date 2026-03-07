@@ -432,14 +432,21 @@ body {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .services__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 }
 
@@ -660,7 +667,7 @@ body {
     min-width: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
     .reviews-carousel .testimonial-card {
         flex: 0 0 calc(33.333% - 0.75rem);
         width: calc(33.333% - 0.75rem);
