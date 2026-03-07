@@ -685,9 +685,40 @@ body {
 .testimonial-card {
     background: var(--white);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: var(--shadow);
     border-left: 4px solid var(--gold);
+}
+
+@media (max-width: 640px) {
+    .reviews-carousel .testimonial-card {
+        padding: 0.875rem 0.75rem;
+    }
+
+    .reviews-carousel .testimonial-card__stars {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .reviews-carousel .testimonial-card p {
+        font-size: 0.875rem;
+        line-height: 1.55;
+    }
+
+    .reviews-carousel .testimonial-card__footer {
+        gap: 0.4rem;
+        margin-top: 0.75rem;
+    }
+
+    .reviews-carousel .avatar {
+        width: 28px;
+        height: 28px;
+        font-size: 0.6rem;
+    }
+
+    .reviews-carousel .testimonial-card__author {
+        font-size: 0.75rem;
+    }
 }
 
 .testimonial-card__stars {
