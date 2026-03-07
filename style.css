@@ -40,6 +40,7 @@ body {
     overflow-x: hidden;
     word-break: break-word;
     overflow-wrap: break-word;
+    font-size: 18px;
 }
 
 .container {
@@ -212,8 +213,12 @@ body {
     color: var(--dark);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     transition: color 0.2s;
+}
+
+.header__cta:empty {
+    display: none;
 }
 
 .nav a:hover {
@@ -283,6 +288,29 @@ body {
     align-items: center;
     color: var(--white);
     overflow: hidden;
+}
+
+.hero__call-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    z-index: 10;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.55rem 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s;
+}
+
+.hero__call-btn:hover {
+    background: var(--blue-dk);
 }
 
 .hero__bg {
@@ -626,12 +654,14 @@ body {
 .reviews-carousel .testimonial-card {
     scroll-snap-align: start;
     flex: 0 0 calc(50% - 0.5rem);
+    width: calc(50% - 0.5rem);
     min-width: 0;
 }
 
 @media (min-width: 640px) {
     .reviews-carousel .testimonial-card {
         flex: 0 0 calc(33.333% - 0.75rem);
+        width: calc(33.333% - 0.75rem);
     }
 }
 
