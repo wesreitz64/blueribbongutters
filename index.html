@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a4fa0">
+    <link rel="apple-touch-icon" href="icon-512.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -185,204 +188,246 @@
             <div class="reviews-carousel-wrap">
                 <button class="carousel-btn carousel-btn--prev" id="reviewPrev" aria-label="Previous">&#8249;</button>
                 <div class="reviews-carousel" id="reviewsCarousel">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"I recently had my gutters and downspouts replaced. Ed suggested larger downspouts to handle
-                            excess water — my basement is now dry. I was impressed with how they cleaned up my yard,
-                            leaving no trash or scraps behind."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--green">LK</div><span class="testimonial-card__author">Lisa Keller
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"I recently had my gutters and downspouts replaced. Ed suggested larger downspouts to
+                                handle
+                                excess water — my basement is now dry. I was impressed with how they cleaned up my yard,
+                                leaving no trash or scraps behind."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--green">LK</div><span class="testimonial-card__author">Lisa
+                                    Keller · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"You won't find a more honest and hardworking person. Ed gave us a quote and in less than
+                                a
+                                week, he had the gutters installed. He takes his time to be sure everything is a precise
+                                fit. You won't go wrong hiring Blue Ribbon."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--purple">B</div><span class="testimonial-card__author">Becca ·
+                                    Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"You won't find a more honest and hardworking person. Ed gave us a quote and in less than a
-                            week, he had the gutters installed. He takes his time to be sure everything is a precise
-                            fit. You won't go wrong hiring Blue Ribbon."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--purple">B</div><span class="testimonial-card__author">Becca ·
-                                Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"After dealing with years of clogged gutters, we found Blue Ribbon Gutters. They
+                                installed
+                                new gutters with guards and new, secure downspouts — the quality of workmanship and
+                                attention to detail is outstanding."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--blue">CH</div><span class="testimonial-card__author">Carol
+                                    Harner · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"I highly, highly recommend Ed and Blue Ribbon Gutters. He was professional, kind and
+                                honest.
+                                He worked so hard on our house to fix the problems — keeping the cost to a minimum.
+                                Thank
+                                you, Ed!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--red">LD</div><span class="testimonial-card__author">Lisa
+                                    Drewicz · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"After dealing with years of clogged gutters, we found Blue Ribbon Gutters. They installed
-                            new gutters with guards and new, secure downspouts — the quality of workmanship and
-                            attention to detail is outstanding."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--blue">CH</div><span class="testimonial-card__author">Carol Harner
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Ed was such a great pleasure to work with. He took the time to walk me through his plan
+                                and
+                                even provided suggestions I didn't think of. The end result was perfect. I highly
+                                recommend
+                                Blue Ribbon Gutters."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--teal">BF</div><span class="testimonial-card__author">Brian
+                                    Forster · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"As a project manager for a residential construction company, I reach out to Blue Ribbon
+                                Gutters for ALL of our gutter needs — both repairs and new construction. Blue Ribbon
+                                provides prompt, professional service every time."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--teal">TW</div><span class="testimonial-card__author">Thomas
+                                    Wynne · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"I highly, highly recommend Ed and Blue Ribbon Gutters. He was professional, kind and honest.
-                            He worked so hard on our house to fix the problems — keeping the cost to a minimum. Thank
-                            you, Ed!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--red">LD</div><span class="testimonial-card__author">Lisa Drewicz
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"I would highly recommend Blue Ribbon Gutters. Ed did a great job!! Looks great. I'm very
+                                happy with his craftsmanship. I knew from the moment I talked to him he was an honest
+                                guy.
+                                (Old school)"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--gold">JD</div><span class="testimonial-card__author">Jim Dee
+                                    · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Blue Ribbon Gutter is a top quality installer. The owner was meticulous with the install
+                                and
+                                even corrected some issues from a previous contractor. Would highly recommend!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--green">JS</div><span class="testimonial-card__author">Jesse
+                                    Smith · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Ed was such a great pleasure to work with. He took the time to walk me through his plan and
-                            even provided suggestions I didn't think of. The end result was perfect. I highly recommend
-                            Blue Ribbon Gutters."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--teal">BF</div><span class="testimonial-card__author">Brian
-                                Forster · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"My neighbor highly recommended Ed. He was very professional, kind and explained
+                                everything
+                                thoroughly. Excellent work and went above and beyond. I highly recommend Blue Ribbon
+                                Gutters!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--purple">SC</div><span
+                                    class="testimonial-card__author">Verified Customer · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Excellent workmanship! I am a contractor who was looking for seamless gutters for an
+                                exterior restoration project in Boyertown. I found Ed and now my customer and I are both
+                                very happy!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--teal">GL</div><span class="testimonial-card__author">Greg
+                                    Lipson · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"As a project manager for a residential construction company, I reach out to Blue Ribbon
-                            Gutters for ALL of our gutter needs — both repairs and new construction. Blue Ribbon
-                            provides prompt, professional service every time."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--teal">TW</div><span class="testimonial-card__author">Thomas Wynne
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Very pleased with Blue Ribbon's services! Seamless customer service, swift response,
+                                clear
+                                communication and very fair/competitive pricing. Couldn't be more happy. Will be
+                                contacting
+                                for future services!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--blue">ET</div><span class="testimonial-card__author">Eric
+                                    Turney · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Excellent service!!! Ed was a true professional, same day quote, fast service all for a
+                                great price. Highest recommendations for Blue Ribbon!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--blue">MB</div><span class="testimonial-card__author">Michael
+                                    Blanc · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"I would highly recommend Blue Ribbon Gutters. Ed did a great job!! Looks great. I'm very
-                            happy with his craftsmanship. I knew from the moment I talked to him he was an honest guy.
-                            (Old school)"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--gold">JD</div><span class="testimonial-card__author">Jim Dee ·
-                                Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Ed at Blue Ribbon did a fantastic job installing seamless gutters on our garage. He was
+                                knowledgeable and fairly priced. Highly recommend!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--gold">JZ</div><span class="testimonial-card__author">JE Z ·
+                                    Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"I was looking to upgrade my old, poorly pitched gutters. Came across Blue Ribbon
+                                Gutters. Ed
+                                was a great guy to work with, the results look beautiful and I couldn't be happier! He
+                                was
+                                clean and very respectful of my property."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--purple">G</div><span class="testimonial-card__author">Greg ·
+                                    Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Blue Ribbon Gutter is a top quality installer. The owner was meticulous with the install and
-                            even corrected some issues from a previous contractor. Would highly recommend!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--green">JS</div><span class="testimonial-card__author">Jesse Smith
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Ed Reitz from Blue Ribbon Gutters installed the gutters on my house. He did a fantastic
+                                job
+                                and was very thorough and respectful throughout the process. I would definitely
+                                recommend
+                                him for any gutter work."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--teal">EC</div><span class="testimonial-card__author">Eric
+                                    Chan · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Just had gutters done today and we are very pleased. Great price and easy to work with.
+                                Came
+                                out quickly for an estimate and able to get the job done quickly. Would recommend."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--pink">K</div><span class="testimonial-card__author">Kari ·
+                                    Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"My neighbor highly recommended Ed. He was very professional, kind and explained everything
-                            thoroughly. Excellent work and went above and beyond. I highly recommend Blue Ribbon
-                            Gutters!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--purple">SC</div><span class="testimonial-card__author">Verified
-                                Customer · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Ed was very professional and efficient when installing our gutters. I am very happy with
+                                the
+                                service he provided — they work and look great! Thank you Ed!"</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--gold">KD</div><span class="testimonial-card__author">Kaylin
+                                    Dunmire · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Quick service, reasonable pricing, great communication. Very happy with the work that
+                                was
+                                performed."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--green">DM</div><span class="testimonial-card__author">Daniel
+                                    Marrero · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Excellent workmanship! I am a contractor who was looking for seamless gutters for an
-                            exterior restoration project in Boyertown. I found Ed and now my customer and I are both
-                            very happy!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--teal">GL</div><span class="testimonial-card__author">Greg Lipson
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"On time professional service! Workmanship second to none and very fair price. Would
+                                highly
+                                recommend!!! Thanks for the great service."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--blue">JK</div><span class="testimonial-card__author">Jonathan
+                                    Ketcham · Google</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Ed was great to work with. He did a great job, timely and affordable. Very
+                                professional."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--pink">TH</div><span class="testimonial-card__author">Theresa
+                                    Henry · Google</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Very pleased with Blue Ribbon's services! Seamless customer service, swift response, clear
-                            communication and very fair/competitive pricing. Couldn't be more happy. Will be contacting
-                            for future services!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--blue">ET</div><span class="testimonial-card__author">Eric Turney
-                                · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Excellent service!!! Ed was a true professional, same day quote, fast service all for a
-                            great price. Highest recommendations for Blue Ribbon!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--blue">MB</div><span class="testimonial-card__author">Michael
-                                Blanc · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Ed at Blue Ribbon did a fantastic job installing seamless gutters on our garage. He was
-                            knowledgeable and fairly priced. Highly recommend!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--gold">JZ</div><span class="testimonial-card__author">JE Z ·
-                                Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"I was looking to upgrade my old, poorly pitched gutters. Came across Blue Ribbon Gutters. Ed
-                            was a great guy to work with, the results look beautiful and I couldn't be happier! He was
-                            clean and very respectful of my property."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--purple">G</div><span class="testimonial-card__author">Greg ·
-                                Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Ed Reitz from Blue Ribbon Gutters installed the gutters on my house. He did a fantastic job
-                            and was very thorough and respectful throughout the process. I would definitely recommend
-                            him for any gutter work."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--teal">EC</div><span class="testimonial-card__author">Eric Chan ·
-                                Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Just had gutters done today and we are very pleased. Great price and easy to work with. Came
-                            out quickly for an estimate and able to get the job done quickly. Would recommend."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--pink">K</div><span class="testimonial-card__author">Kari ·
-                                Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Ed was very professional and efficient when installing our gutters. I am very happy with the
-                            service he provided — they work and look great! Thank you Ed!"</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--gold">KD</div><span class="testimonial-card__author">Kaylin
-                                Dunmire · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Quick service, reasonable pricing, great communication. Very happy with the work that was
-                            performed."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--green">DM</div><span class="testimonial-card__author">Daniel
-                                Marrero · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"On time professional service! Workmanship second to none and very fair price. Would highly
-                            recommend!!! Thanks for the great service."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--blue">JK</div><span class="testimonial-card__author">Jonathan
-                                Ketcham · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Ed was great to work with. He did a great job, timely and affordable. Very professional."
-                        </p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--pink">TH</div><span class="testimonial-card__author">Theresa
-                                Henry · Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p>"Quick, efficient, quality service."</p>
-                        <div class="testimonial-card__footer">
-                            <div class="avatar avatar--green">SK</div><span class="testimonial-card__author">Sean Keehn
-                                · Google</span>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p>"Quick, efficient, quality service."</p>
+                            <div class="testimonial-card__footer">
+                                <div class="avatar avatar--green">SK</div><span class="testimonial-card__author">Sean
+                                    Keehn · Google</span>
+                            </div>
                         </div>
                     </div>
                 </div>

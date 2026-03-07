@@ -1,0 +1,23 @@
+{
+    "name": "Blue Ribbon Seamless Gutter",
+    "short_name": "Blue Ribbon",
+    "description": "Professional seamless gutter installation & repair in Boyertown, PA.",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#ffffff",
+    "theme_color": "#1a4fa0",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

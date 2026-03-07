@@ -56,26 +56,26 @@ const nextBtn = document.getElementById('reviewNext');
 const dotsWrap = document.getElementById('reviewDots');
 
 if (carousel && prevBtn && nextBtn && dotsWrap) {
-    const cards = Array.from(carousel.querySelectorAll('.testimonial-card'));
+    const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
 
-    function perView() { return window.innerWidth >= 640 ? 3 : 2; }
-    function cardWidth() {
-        return cards[0].offsetWidth + parseInt(getComputedStyle(carousel).gap || 16);
+    function perView() { return window.innerWidth >= 900 ? 3 : 1; }
+    function slideWidth() {
+        return slides[0].offsetWidth + parseInt(getComputedStyle(carousel).gap || 16);
     }
-    function totalSlides() { return Math.ceil(cards.length / perView()); }
-    function currentSlide() {
-        return Math.round(carousel.scrollLeft / (perView() * cardWidth()));
+    function totalPages() { return Math.ceil(slides.length / perView()); }
+    function currentPage() {
+        return Math.round(carousel.scrollLeft / (perView() * slideWidth()));
     }
 
     // Build dots
     function buildDots() {
         dotsWrap.innerHTML = '';
-        for (let i = 0; i < totalSlides(); i++) {
+        for (let i = 0; i < totalPages(); i++) {
             const d = document.createElement('button');
             d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
             d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
             d.addEventListener('click', () => {
-                carousel.scrollTo({ left: i * perView() * cardWidth(), behavior: 'smooth' });
+                carousel.scrollTo({ left: i * perView() * slideWidth(), behavior: 'smooth' });
             });
             dotsWrap.appendChild(d);
         }
@@ -83,7 +83,7 @@ if (carousel && prevBtn && nextBtn && dotsWrap) {
 
     function updateDots() {
         const dots = dotsWrap.querySelectorAll('.carousel-dot');
-        dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide()));
+        dots.forEach((d, i) => d.classList.toggle('active', i === currentPage()));
     }
 
     buildDots();
@@ -91,9 +91,9 @@ if (carousel && prevBtn && nextBtn && dotsWrap) {
     window.addEventListener('resize', buildDots);
 
     prevBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: -(perView() * cardWidth()), behavior: 'smooth' });
+        carousel.scrollBy({ left: -(perView() * slideWidth()), behavior: 'smooth' });
     });
     nextBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: perView() * cardWidth(), behavior: 'smooth' });
+        carousel.scrollBy({ left: perView() * slideWidth(), behavior: 'smooth' });
     });
 }
