@@ -295,8 +295,8 @@ body {
     top: 1rem;
     right: 1.25rem;
     z-index: 10;
-    background: var(--blue);
-    color: var(--white);
+    background: var(--white);
+    color: var(--blue);
     text-decoration: none;
     padding: 0.55rem 1rem;
     border-radius: 50px;
@@ -305,12 +305,14 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-    transition: background 0.2s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    border: 2px solid var(--gold);
+    transition: background 0.2s, color 0.2s;
 }
 
 .hero__call-btn:hover {
-    background: var(--blue-dk);
+    background: var(--gold);
+    color: var(--dark);
 }
 
 .hero__bg {
