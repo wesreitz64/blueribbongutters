@@ -598,10 +598,87 @@ body {
     background: var(--light);
 }
 
-.testimonials__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    gap: 1.5rem;
+/* ---- REVIEWS CAROUSEL ---- */
+.reviews-carousel-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex: 1;
+    align-items: stretch;
+}
+
+.reviews-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews-carousel .testimonial-card {
+    scroll-snap-align: start;
+    flex: 0 0 calc(50% - 0.5rem);
+    min-width: 0;
+}
+
+@media (min-width: 640px) {
+    .reviews-carousel .testimonial-card {
+        flex: 0 0 calc(33.333% - 0.75rem);
+    }
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    background: var(--white);
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 0;
+    line-height: 1;
+}
+
+.carousel-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d1d5db;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: none;
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--blue);
+    width: 22px;
+    border-radius: 4px;
 }
 
 .testimonial-card {
@@ -624,10 +701,60 @@ body {
     line-height: 1.7;
 }
 
-.testimonial-card__author {
+.testimonial-card__footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     margin-top: 1rem;
+}
+
+.testimonial-card__author {
     font-weight: 700;
     color: var(--dark);
+    font-size: 0.9rem;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    letter-spacing: 0.02em;
+}
+
+.avatar--blue {
+    background: var(--blue);
+}
+
+.avatar--gold {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+.avatar--green {
+    background: #16a34a;
+}
+
+.avatar--purple {
+    background: #7c3aed;
+}
+
+.avatar--red {
+    background: #dc2626;
+}
+
+.avatar--teal {
+    background: #0891b2;
+}
+
+.avatar--pink {
+    background: #be185d;
 }
 
 /* ---- SERVICE AREA ---- */
