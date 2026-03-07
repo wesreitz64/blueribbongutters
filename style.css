@@ -30,6 +30,7 @@ iframe {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 22.5px;
 }
 
 body {
@@ -40,7 +41,6 @@ body {
     overflow-x: hidden;
     word-break: break-word;
     overflow-wrap: break-word;
-    font-size: 22.5px;
 }
 
 .container {
