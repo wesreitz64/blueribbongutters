@@ -464,7 +464,7 @@ body {
     padding: 1rem;
     box-shadow: var(--shadow);
     transition: transform 0.2s, box-shadow 0.2s;
-    border-top: 4px solid var(--blue);
+    border-top: 4px solid var(--gold);
 }
 
 .card:hover {
