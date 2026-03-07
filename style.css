@@ -162,15 +162,15 @@ body {
 }
 
 .logo__img {
-    height: 48px;
-    width: 48px;
+    height: 56px;
+    width: 56px;
     object-fit: contain;
     border-radius: 4px;
 }
 
 .logo__blue {
     display: block;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--blue);
     line-height: 1.1;
@@ -275,6 +275,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 60% 30%;
 }
 
 .hero__overlay {
@@ -327,8 +328,16 @@ body {
 }
 
 @media (max-width: 600px) {
+    .hero {
+        min-height: 65vh;
+    }
+
     .hero__title {
         font-size: 2.2rem;
+    }
+
+    .hero__content {
+        padding: 3rem 0;
     }
 
     .hero__actions {
