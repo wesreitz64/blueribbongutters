@@ -485,6 +485,78 @@ body {
     }
 }
 
+.about__photo {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about__ed-photo {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border: 4px solid var(--gold);
+}
+
+.about__photo-caption {
+    margin-top: 0.75rem;
+    font-weight: 700;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+/* ---- GALLERY ---- */
+.gallery {
+    background: var(--white);
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: zoom-in;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.gallery__img:first-child {
+    grid-column: span 2;
+    height: 320px;
+}
+
+@media (max-width: 768px) {
+    .gallery__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery__img:first-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__img:first-child {
+        grid-column: span 1;
+    }
+}
+
 /* ---- TESTIMONIALS ---- */
 .testimonials {
     background: var(--light);
