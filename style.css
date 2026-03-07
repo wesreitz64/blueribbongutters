@@ -337,7 +337,7 @@ body {
     position: relative;
     z-index: 2;
     max-width: 720px;
-    padding: 6rem;
+    padding: 1rem;
 }
 
 .hero__badge {
