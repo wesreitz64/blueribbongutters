@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11121961747"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11121961747');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a4fa0">
+    <link rel="icon" type="image/png" href="/icon-192.png">
+    <link rel="apple-touch-icon" href="/icon-512.png">
+    <link rel="stylesheet" href="/style.css?v=8">
+    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=5162d7f3"></script>
+    <style>
+        .blog-content { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; line-height: 1.8; font-size: 1.1rem; color: #333; }
+        .blog-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; color: var(--blue); font-size: 1.8rem; }
+        .blog-content h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: var(--dark); font-size: 1.4rem; }
+        .blog-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .blog-content ul, .blog-content ol { margin-left: 1.5rem; margin-bottom: 1.5rem; }
+        .blog-content li { margin-bottom: 0.5rem; }
+        .blog-content p { margin-bottom: 1.5rem; }
+        .blog-content strong { color: var(--dark); }
+        .post-header { text-align: center; max-width: 800px; margin: 0 auto; padding: 4rem 1.5rem 2rem; border-bottom: 1px solid #e5e7eb; }
+        .post-title { font-size: 2.5rem; font-weight: 800; color: var(--dark); line-height: 1.25; margin-bottom: 1rem; }
+        .post-meta { color: var(--gray); font-size: 1rem; font-weight: 500;}
+        .post-town-badge { display: inline-block; background: var(--light); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; border: 1px solid #d1d5db; }
+        @media (max-width: 600px) {
+            .post-title { font-size: 2rem; }
+            .post-header { padding-top: 2.5rem; }
+            .blog-content { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- STICKY HEADER -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="Blue Ribbon Seamless Gutter Logo" class="logo__img">
+                <div>
+                    <span class="logo__blue">Blue Ribbon</span>
+                    <span class="logo__sub">Seamless Gutter</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="/#services">Services</a>
+                <a href="/#about">About</a>
+                <a href="/#testimonials">Reviews</a>
+                <a href="/#contact">Contact</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+            <div class="header__cta"></div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="/#services" onclick="closeMobileNav()">Services</a>
+            <a href="/#about" onclick="closeMobileNav()">About</a>
+            <a href="/#testimonials" onclick="closeMobileNav()">Reviews</a>
+            <a href="/#contact" onclick="closeMobileNav()">Contact</a>
+            <a href="/blog.html">Blog</a>
+            <a href="tel:+16103227069" class="btn btn--primary" style="margin-top:1rem;text-align:center;"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="sms:+16103227069?body=Hi! I'm interested in a free gutter estimate." class="btn btn--sms" style="text-align:center;"><i class="fas fa-comment-sms"></i> Text Us</a>
+        </nav>
+    </header>
+
+    <div class="post-header">
+        {% if page.town %}
+        <div class="post-town-badge">📍 {{ page.town }}, PA Gutter Advice</div>
+        {% endif %}
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            By {{ page.author }} &nbsp;•&nbsp; {{ page.date | date: "%B %-d, %Y" }}
+        </div>
+    </div>
+
+    <!-- MAIN BLOG CONTENT -->
+    <main class="blog-content">
+        {{ content }}
+        
+        <div style="background: var(--light); padding: 2.5rem 1.5rem; border-radius: 12px; margin-top: 4rem; text-align: center; border-bottom: 4px solid var(--gold); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <h3 style="margin-top:0; font-size: 1.5rem;">Need a Free Estimate in {% if page.town %}{{ page.town }}{% else %}Boyertown{% endif %}?</h3>
+            <p style="margin-bottom: 1.5rem;">Don't wait until water damages your home. Call Ed today for a fast, free local estimate on seamless gutters and heavy-duty guards.</p>
+            <a href="tel:+16103227069" class="btn btn--primary btn--lg"><i class="fas fa-phone"></i> (610) 322-7069</a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="/" class="logo logo--light">
+                    <img src="/logo.png" alt="Blue Ribbon Seamless Gutter Logo" class="logo__img">
+                    <div>
+                        <span class="logo__blue" style="color:#fff;">Blue Ribbon</span>
+                        <span class="logo__sub" style="color:rgba(255,255,255,0.7);">Seamless Gutter</span>
+                    </div>
+                </a>
+                <p>Serving Boyertown, PA and surrounding communities with professional seamless gutter services.</p>
+            </div>
+            <div class="footer__contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> <a href="tel:+16103227069">(610) 322-7069</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Boyertown, PA 19512</p>
+                <p><i class="fas fa-clock"></i> Mon–Sat: 7am – 6pm</p>
+                <p><i class="fas fa-id-badge"></i> PA Contractor Lic. #PA04435</p>
+            </div>
+            <div class="footer__links">
+                <h4>Quick Links</h4>
+                <a href="/#services">Services</a>
+                <a href="/#about">About</a>
+                <a href="/#testimonials">Reviews</a>
+                <a href="/#contact">Free Estimate</a>
+                <a href="/blog.html">Blog</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Blue Ribbon Seamless Gutter · Boyertown, PA · PA Lic. #PA04435 · All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING MOBILE CTA -->
+    <div class="mobile-cta" id="mobileCta">
+        <a href="tel:+16103227069" class="mobile-cta__btn mobile-cta__btn--call">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="sms:+16103227069?body=Hi! I'd like a free gutter estimate."
+            class="mobile-cta__btn mobile-cta__btn--sms">
+            <i class="fas fa-comment-sms"></i> Text
+        </a>
+        <a href="/#contact" class="mobile-cta__btn mobile-cta__btn--quote">
+            <i class="fas fa-clipboard-list"></i> Quote
+        </a>
+    </div>
+
+    <script src="/script.js?v=8"></script>
+</body>
+</html>

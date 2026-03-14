@@ -1,0 +1,26 @@
+title: "Blue Ribbon Seamless Gutter"
+description: "Expert seamless gutter installation and repair serving Boyertown, Pottstown, and Montgomery and Berks Counties."
+url: "https://blueribbongutters.com"
+baseurl: ""
+permalink: /blog/:title/
+
+# Give posts their own specific layout automatically
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Blog Settings
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+collections:
+  posts:
+    output: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
