@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ievv7x1uek");
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visitor Intelligence Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --accent: #00ff88;
+    --accent2: #0088ff;
+    --accent3: #ff6b35;
+    --text: #e0e0f0;
+    --muted: #555570;
+    --tag: #1a1a2e;
+  }
+
+  body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* animated grid bg */
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none; z-index: -1;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  
+  header { margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+  
+  h1 {
+    font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; margin: 0;
+    background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .badge { background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.3); color: var(--accent); padding: 4px 10px; border-radius: 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 8px; }
+
+  .visitor-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; margin-bottom: 24px; transition: border-color 0.2s;
+  }
+  .visitor-card:hover { border-color: rgba(0,255,136,0.3); }
+
+  .visitor-header {
+    display: flex; gap: 20px; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  
+  .h-col { display: flex; flex-direction: column; gap: 4px; }
+  .h-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .h-val { font-size: 14px; font-weight: 700; color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  
+  .box { background: rgba(255,255,255,0.02); padding: 12px; border-radius: 8px; font-size: 12px; }
+  .box-title { color: var(--accent2); font-size: 11px; font-weight: bold; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
+  
+  .kv { display: flex; justify-content: space-between; margin-bottom: 4px; padding-bottom: 4px; border-bottom: 1px solid rgba(255,255,255,0.02); }
+  .k { color: var(--muted); }
+  .v { color: var(--text); word-break: break-all; text-align: right; max-width: 65%; }
+
+  .btn {
+    background: var(--accent); color: #000; border: none; padding: 8px 16px; border-radius: 6px;
+    font-family: inherit; font-size: 12px; font-weight: bold; cursor: pointer;
+  }
+  .btn:hover { opacity: 0.9; }
+</style>
+<!-- JSON-LD LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Blue Ribbon Seamless Gutter",
+  "image": "https://blueribbongutters.com/logo.png",
+  "@id": "https://blueribbongutters.com/",
+  "url": "https://blueribbongutters.com/",
+  "telephone": "+16103227069",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "Boyertown",
+    "addressRegion": "PA",
+    "postalCode": "19512",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.334000,
+    "longitude": -75.637500
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "07:00",
+    "closes": "18:00"
+  }
+}
+</script>
+<!-- Ahrefs Analytics -->
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="m3HTzeCMSRGKXeT2mQI3qQ" async></script>
+    <meta name="ahrefs-site-verification" content="46d9a2cbd4cf38a79b3cad164afe78627d9d4572cd5337ba5ee19731a94d3dbb">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div>
+      <div class="badge">Live Monitor</div>
+      <h1>Visitor Intelligence</h1>
+    </div>
+    <button class="btn" onclick="fetchData()">🔄 Refresh Data</button>
+  </header>
+
+  <div id="loading" style="color:var(--muted); text-align:center; padding: 40px;">Fetching logs...</div>
+  <div id="visitors-list"></div>
+</div>
+
+<script>
+  function renderKV(obj) {
+    if (!obj) return '';
+    return Object.entries(obj).map(([k,v]) => {
+      let disp = v;
+      if (typeof v === 'object' && v !== null) disp = JSON.stringify(v);
+      return `<div class="kv"><span class="k">${k}</span><span class="v">${disp}</span></div>`;
+    }).join('');
+  }
+
+  async function fetchData() {
+    const list = document.getElementById('visitors-list');
+    const load = document.getElementById('loading');
+    
+    try {
+      // In production, point this to wherever visitors.json is hosted
+      const r = await fetch('http://localhost:8080/api/visitors');
+      const data = await r.json();
+      
+      load.style.display = 'none';
+      list.innerHTML = '';
+      
+      if (data.length === 0) {
+        list.innerHTML = '<div style="color:var(--muted);text-align:center;">No visitors logged yet. Visit the site to generate logs.</div>';
+        return;
+      }
+
+      data.forEach(v => {
+        const time = new Date(v.timestamp?.iso || v._server_received_at).toLocaleString();
+        const ref = v.page?.referrer || 'Direct';
+        const fp = v.canvas?.fingerprintSlice || 'Unknown';
+        
+        const card = document.createElement('div');
+        card.className = 'visitor-card';
+        card.innerHTML = `
+          <div class="visitor-header">
+            <div class="h-col"><span class="h-label">Time</span><span class="h-val" style="color:#fff">${time}</span></div>
+            <div class="h-col"><span class="h-label">Page</span><span class="h-val" style="color:var(--accent2)">${v.page?.pathname || '/'}</span></div>
+            <div class="h-col"><span class="h-label">Referrer</span><span class="h-val">${ref}</span></div>
+            <div class="h-col"><span class="h-label">Device</span><span class="h-val">${v.hardware?.deviceMemoryGB || '?'}GB RAM / ${v.hardware?.cpuCores || '?'} Cores</span></div>
+            <div class="h-col"><span class="h-label">IP Addr</span><span class="h-val" style="color:var(--accent3)">${v.geo?.ip || 'Pending'}</span></div>
+            <div class="h-col"><span class="h-label">Location</span><span class="h-val" style="color:#fff">${v.geo?.city || 'N/A'}, ${v.geo?.region || 'N/A'}</span></div>
+          </div>
+          
+          <div class="grid">
+            <div class="box"><div class="box-title">Network & Geo</div>${renderKV(v.geo)}${renderKV(v.network)}</div>
+            <div class="box"><div class="box-title">System & GPU</div>${renderKV(v.browser)}${renderKV(v.webgl)}</div>
+            <div class="box"><div class="box-title">Page & UTMs</div>${renderKV(v.page)}</div>
+            <div class="box"><div class="box-title">Performance</div>${renderKV(v.performance)}</div>
+          </div>
+        `;
+        list.appendChild(card);
+      });
+      
+    } catch(e) {
+      load.textContent = 'Error fetching data. Is the Python tracking server running?';
+      console.error(e);
+    }
+  }
+
+  fetchData();
+  // auto refresh every 30s
+  setInterval(fetchData, 30000);
+</script>
+
+</body>
+</html>

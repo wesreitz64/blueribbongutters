@@ -1,0 +1,503 @@
+[
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:26:20.634Z",
+      "unix": 1773548780634,
+      "local": "3/14/2026, 11:26:20 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/index.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/index.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Blue Ribbon Seamless Gutter | Boyertown, PA",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.4900000095367432
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 1676,
+      "viewportHeight": 969
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 10,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773548779587,
+      "scriptBootMs": 1
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "engagement": {
+      "maxScrollDepthPct": 17
+    },
+    "_server_received_at": "2026-03-15T00:16:34.579774"
+  },
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:42:24.968Z",
+      "unix": 1773549744968,
+      "local": "3/14/2026, 11:42:24 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/pottstown.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/pottstown.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Gutter Installation & Repair in Pottstown, PA | Blue Ribbon Seamless Gutter",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.8624999523162842
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 669,
+      "viewportHeight": 780
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 7.65,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773549744211,
+      "scriptBootMs": 2
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "_server_received_at": "2026-03-14T23:42:25.522372"
+  },
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:40:40.798Z",
+      "unix": 1773549640799,
+      "local": "3/14/2026, 11:40:40 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/index.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/index.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Blue Ribbon Seamless Gutter | Boyertown, PA",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.8624999523162842
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 669,
+      "viewportHeight": 780
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 7.65,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773549639540,
+      "scriptBootMs": 50
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "engagement": {
+      "maxScrollDepthPct": 0
+    },
+    "_server_received_at": "2026-03-14T23:42:24.256032"
+  },
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:40:40.798Z",
+      "unix": 1773549640799,
+      "local": "3/14/2026, 11:40:40 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/index.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/index.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Blue Ribbon Seamless Gutter | Boyertown, PA",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.8624999523162842
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 669,
+      "viewportHeight": 780
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 7.65,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773549639540,
+      "scriptBootMs": 50
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "_server_received_at": "2026-03-14T23:40:41.493355"
+  },
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:26:20.634Z",
+      "unix": 1773548780634,
+      "local": "3/14/2026, 11:26:20 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/index.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/index.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Blue Ribbon Seamless Gutter | Boyertown, PA",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.4900000095367432
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 1676,
+      "viewportHeight": 969
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 10,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773548779587,
+      "scriptBootMs": 1
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "_server_received_at": "2026-03-14T23:26:21.250832"
+  },
+  {
+    "timestamp": {
+      "iso": "2026-03-15T04:19:35.600Z",
+      "unix": 1773548375600,
+      "local": "3/14/2026, 11:19:35 PM",
+      "timezone": "America/Chicago",
+      "timezoneOffset": 300,
+      "locale": "en-US"
+    },
+    "page": {
+      "url": "http://localhost:8080/index.html",
+      "origin": "http://localhost:8080",
+      "pathname": "/index.html",
+      "search": "",
+      "hash": "",
+      "referrer": null,
+      "title": "Blue Ribbon Seamless Gutter | Boyertown, PA",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "term": null,
+        "content": null
+      },
+      "allQueryParams": {}
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "cookiesEnabled": true,
+      "doNotTrack": null,
+      "onLine": true,
+      "platform": "Win32",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    },
+    "hardware": {
+      "cpuCores": 8,
+      "deviceMemoryGB": 8,
+      "maxTouchPoints": 10,
+      "devicePixelRatio": 1.4900000095367432
+    },
+    "screen": {
+      "width": 1341,
+      "height": 894,
+      "availWidth": 1341,
+      "availHeight": 862,
+      "colorDepth": 32,
+      "pixelDepth": 32,
+      "orientation": {
+        "type": "landscape-primary",
+        "angle": 0
+      },
+      "viewportWidth": 1676,
+      "viewportHeight": 969
+    },
+    "network": {
+      "effectiveType": "4g",
+      "downlink": 10,
+      "rtt": 50
+    },
+    "performance": {
+      "pageLoadMs": -1773548374440,
+      "scriptBootMs": 36
+    },
+    "geo": {
+      "ip": "47.188.185.212",
+      "city": "Carrollton",
+      "region": "Texas",
+      "country": "United States",
+      "latitude": 32.9657,
+      "longitude": -96.8825,
+      "timezone": "America/Chicago",
+      "isp": "Frontier Communications of America, Inc."
+    },
+    "engagement": {
+      "maxScrollDepthPct": 34
+    },
+    "_server_received_at": "2026-03-14T23:26:19.919474"
+  }
+]
