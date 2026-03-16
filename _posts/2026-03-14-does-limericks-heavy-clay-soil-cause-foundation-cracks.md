@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Does Limerick’s Heavy Clay Soil Cause Foundation Cracks?"
+title: "Clay Soil & Foundation Safety in Limerick, PA"
 date: 2026-03-14 00:00:00 -0400
 author: "Ed Reitz"
 town: "Limerick"

@@ -4,8 +4,20 @@ url: "https://blueribbongutters.com"
 baseurl: ""
 permalink: /blog/:title/
 
-# Give posts their own specific layout automatically
+# Pages to exclude from sitemap and crawlers
 defaults:
+  - scope:
+      path: "admin-visitors.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "home2.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "stowe.html"
+    values:
+      sitemap: false
   -
     scope:
       path: ""

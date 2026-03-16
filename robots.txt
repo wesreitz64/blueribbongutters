@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin-visitors.html
+Disallow: /home2.html
+
+Sitemap: https://blueribbongutters.com/sitemap.xml
