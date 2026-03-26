@@ -14,10 +14,6 @@ defaults:
       path: "home2.html"
     values:
       sitemap: false
-  - scope:
-      path: "stowe.html"
-    values:
-      sitemap: false
   -
     scope:
       path: ""
